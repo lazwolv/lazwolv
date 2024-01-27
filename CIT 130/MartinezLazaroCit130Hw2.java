@@ -2,9 +2,9 @@
 /// I pledge my word of honor that I have abided
 /// by the CSN Academic Integrity Policy
 /// while completing this assignment.
-/// @file AddingIntegers
-/// @version 01/22/2024
-/// @note Time taken 30 minutes
+/// @file MartinezLazaroCit130Hw2
+/// @version 01/26/2024
+/// @note Time taken 60 minutes
 
 /* IPO
 
