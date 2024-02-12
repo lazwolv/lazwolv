@@ -44,7 +44,8 @@ End
 
 */
 
-import java.util.*; // import utility package
+// import utility package
+import java.util.Scanner;
 
 public class MartinezLazaroCit130Hw3{
 	public static void main(String[] args){
@@ -128,7 +129,7 @@ public class MartinezLazaroCit130Hw3{
 		TotalCost = AdultCost + ChildCost;
 		System.out.println("Total Cost: $" + TotalCost);
 
-
+		input.close();
 	}//main
 
 

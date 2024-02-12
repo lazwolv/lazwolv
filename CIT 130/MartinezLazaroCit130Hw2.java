@@ -28,7 +28,7 @@ End
 
 */
 
-import java.util.*;
+import java.util.Scanner;
 
 public class MartinezLazaroCit130Hw2{
 
@@ -75,6 +75,8 @@ public class MartinezLazaroCit130Hw2{
 		figureArea = triangleArea + rectangleArea - semicircleArea;
 		System.out.println("The area of the composite 2D figure is: " + figureArea + " cm2");
 
+		input.close();
+		
 	} //main
 
 } //class
