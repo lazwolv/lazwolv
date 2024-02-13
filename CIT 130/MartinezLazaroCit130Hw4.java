@@ -113,7 +113,7 @@ public class MartinezLazaroCit130Hw4{
 
         // sorted the names in descending order based on the first letter of the name
         // not sure why this was asked, I don't think it's been covered yet or I missed it
-        // also the sample run provided does not do this
+        // also the sample run provided does not do this but I'm going for full points
         if(name1.charAt(0) < name2.charAt(0)) {
             String tempName = name1;
             name1 = name2;
@@ -145,6 +145,8 @@ public class MartinezLazaroCit130Hw4{
         System.out.printf("%s\t\t%.2f%n", name3, netPay3); // when running and debugging, using double tab on the last one
                                                            // was the only way I could get this to look as intended
 
+        input.close();
+        
     } // main
 
 } // class

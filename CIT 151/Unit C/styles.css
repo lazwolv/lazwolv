@@ -1,0 +1,27 @@
+/*
+  Lakeland Reeds Bed and Breakfast style sheet
+  Filename: styles.css
+
+  Author: Lazaro Martinez
+  Date:   02/12/24
+  HTML5 and CSS3 Illustrated Unit C, Lessons
+*/
+
+body {
+  background-color: ivory;
+  text-align: left;
+}
+h1,
+#contact {
+  background-color: palegoldenrod;
+  color: dimgray;
+}
+#contact {
+  text-align: right;
+}
+.accent {
+  color: darkcyan;
+}
+p {
+  color: red;
+}
