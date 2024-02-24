@@ -27,8 +27,6 @@ While choice in (1, 2, 3)
         Get speed and time
         Check time > 0
         Calculate distance
-
-
 */
 
 import java.util.Scanner;
@@ -103,7 +101,18 @@ public class MartinezLazaroCit130Hw5{
                 System.out.printf("In alphabetical order:\n%s\t%s\t%s\t%s\n", name1, name2, name3, name4);
 
                 for (int i = 2; i < name1.length(); i+=2) {
-                        System.out.print(name1.charAt(i));
+                        System.out.print(name1.charAt(i) + " ");
+                        int 
+                    }
+                System.out.printf("There are %d letters", );
+                for (int i = 2; i < name2.length(); i+=2) {
+                        System.out.print(name2.charAt(i) + " ");
+                    }
+                for (int i = 2; i < name3.length(); i+=2) {
+                        System.out.print(name3.charAt(i) + " ");
+                    }
+                for (int i = 2; i < name4.length(); i+=2) {
+                        System.out.print(name1.charAt(i) + " ");
                     }
 
             } else if (choice == 2){
