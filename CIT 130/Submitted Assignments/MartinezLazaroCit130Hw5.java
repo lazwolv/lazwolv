@@ -5,28 +5,41 @@ by the CSN Academic Integrity Policy while
 completing this assignment.
 @file MartinezLazaroCit130Hw5.java
 @version The date as 2024-02-18
-@note Time taken 2 hours
+@note Time taken 3 hours, spread out
 @program This program provides options for comparing names,
 calculating car speed, and handling invalid input gracefully.
 */
 
 /* IPO
 Start
+Import Java Scanner Utility
 Declare variables
 Setup Scanner utility
-Infinite While loop
-Output user choices
-Get choice
-While choice in (1, 2, 3)
+While True Loop
+    Output user choices
+    Get choice
+    Validate choice 1, 2 or 3
+
     If choice == 1
-        Get names
-        Compare names
-        Sort names
-        Output names
+        Get four names
+        Dowhile Loop
+            Compare and sort names
+        Output names in alphabetical order
+        For loop to output every other letter and count them
     Else if choice == 2
         Get speed and time
-        Check time > 0
-        Calculate distance
+        If time > 0
+            Calculate distance
+            Output distance in table format
+            While 0 < speed < 120
+                Calculate distance with increments of 5 for speed and 10 for time
+        Else time < 0
+            Output error message and back to selections
+    Else if choice == 3
+        Handle invalid input with error message
+    Output choice to continue
+    Get choice
+    End
 */
 
 import java.util.Scanner;
@@ -52,13 +65,9 @@ public class MartinezLazaroCit130Hw5{
             choice = input.nextInt();
             input.nextLine();
 
-            while (choice < 1 || choice > 3) {
+            if (choice < 1 || choice > 3) {
                 System.out.println("You entered an out of range number.");
-                System.out.println("Select an option:");
-                choice = input.nextInt();
-                input.nextLine();
             }
-
 
             if (choice == 1) {
                 System.out.println("Enter the first name:");
@@ -155,13 +164,16 @@ public class MartinezLazaroCit130Hw5{
 
             } else if (choice == 3){
                 System.out.println("You entered an out of range number.");
-
                 }
         System.out.println("Would you like another selection? True or False?");
         condition = input.nextBoolean();
+
+        if (condition == false) {
+            System.out.println("Thank you for your time!");
+        } // program closes
     
         }
 
-    }
+    } // main
 
-}
+} // class
