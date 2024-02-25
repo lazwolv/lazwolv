@@ -34,8 +34,10 @@ import java.util.Scanner;
 public class MartinezLazaroCit130Hw5{
     public static void main(String[] args) {
         
-        double speed, time, distance;
+        double speed, distance;
+        double time;
         int choice;
+        int numLetters = 0;
         String name1, name2, name3, name4, temp;
         boolean condition = true;
         boolean order;
@@ -100,40 +102,55 @@ public class MartinezLazaroCit130Hw5{
 
                 System.out.printf("In alphabetical order:\n%s\t%s\t%s\t%s\n", name1, name2, name3, name4);
 
-                for (int i = 2; i < name1.length(); i+=2) {
+                for (int i = 1; i < name1.length(); i+=2) {
                         System.out.print(name1.charAt(i) + " ");
-                        int 
-                    }
-                System.out.printf("There are %d letters", );
-                for (int i = 2; i < name2.length(); i+=2) {
-                        System.out.print(name2.charAt(i) + " ");
-                    }
-                for (int i = 2; i < name3.length(); i+=2) {
-                        System.out.print(name3.charAt(i) + " ");
-                    }
-                for (int i = 2; i < name4.length(); i+=2) {
-                        System.out.print(name1.charAt(i) + " ");
-                    }
+                        numLetters ++;
+                }
+                System.out.printf("There are %d letters.\n", numLetters);
+                numLetters = 0;
+                for (int i = 1; i < name2.length(); i+=2) {
+                    System.out.print(name2.charAt(i) + " ");
+                    numLetters ++;
+                }
+                System.out.printf("There are %d letters.\n", numLetters);
+                numLetters = 0;
+                for (int i = 1; i < name3.length(); i+=2) {
+                    System.out.print(name3.charAt(i) + " ");
+                    numLetters ++;
+                }
+                System.out.printf("There are %d letters.\n", numLetters);
+                numLetters = 0;
+                for (int i = 1; i < name4.length(); i+=2) {
+                    System.out.print(name4.charAt(i) + " ");
+                    numLetters ++;
+                }
+                System.out.printf("There are %d letters.\n", numLetters);
+                numLetters = 0;
 
-            } else if (choice == 2){
+            } else if (choice == 2) {
                 System.out.println("Enter the speed:");
                 speed = input.nextInt();
                 System.out.println("Enter the time:");
                 time = input.nextInt();
-                    while (time < 0){
-                        System.out.println("Enter a valid time value:");
-                        time = input.nextInt();
-                    }
-                distance = speed * time;
-                System.out.printf("Hour\tSpeed\tDistance\n");
-                System.out.printf("%.2f\t%.2f\t%.2f\n", time, speed, distance);
-                
-                while (speed > 0 && speed < 120){
-                    speed = speed + 5;
-                    time = time + 10;
+
+                if ( time >= 0) {
+
                     distance = speed * time;
+                    
+                    System.out.printf("Hour\tSpeed\tDistance\n");
                     System.out.printf("%.2f\t%.2f\t%.2f\n", time, speed, distance);
+                    
+                    while (speed > 0 && speed < 120){
+                        speed = speed + 5;
+                        time = time + 10;
+                        distance = speed * time;
+                        System.out.printf("%.2f\t%.2f\t%.2f\n", time, speed, distance);
+                    }
+
+                } else {
+                    System.out.println("Invalid Time Value. Back to Selections");
                 }
+                
             } else if (choice == 3){
                 System.out.println("You entered an out of range number.");
 
