@@ -34,8 +34,7 @@ import java.util.Scanner;
 public class MartinezLazaroCit130Hw5{
     public static void main(String[] args) {
         
-        double speed, distance;
-        double time;
+        double speed, time, distance;
         int choice;
         int numLetters = 0;
         String name1, name2, name3, name4, temp;
@@ -108,18 +107,21 @@ public class MartinezLazaroCit130Hw5{
                 }
                 System.out.printf("There are %d letters.\n", numLetters);
                 numLetters = 0;
+                
                 for (int i = 1; i < name2.length(); i+=2) {
                     System.out.print(name2.charAt(i) + " ");
                     numLetters ++;
                 }
                 System.out.printf("There are %d letters.\n", numLetters);
                 numLetters = 0;
+                
                 for (int i = 1; i < name3.length(); i+=2) {
                     System.out.print(name3.charAt(i) + " ");
                     numLetters ++;
                 }
                 System.out.printf("There are %d letters.\n", numLetters);
                 numLetters = 0;
+                
                 for (int i = 1; i < name4.length(); i+=2) {
                     System.out.print(name4.charAt(i) + " ");
                     numLetters ++;
@@ -150,7 +152,7 @@ public class MartinezLazaroCit130Hw5{
                 } else {
                     System.out.println("Invalid Time Value. Back to Selections");
                 }
-                
+
             } else if (choice == 3){
                 System.out.println("You entered an out of range number.");
 
