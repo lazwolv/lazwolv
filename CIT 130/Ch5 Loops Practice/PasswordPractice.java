@@ -20,5 +20,6 @@ public class PasswordPractice{
       }// else
       attempts++;
     }// while
+    input.close();
   }// main
 }// class

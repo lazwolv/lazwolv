@@ -187,6 +187,8 @@ public class MartinezLazaroCit130Hw5{
     
         } // while true loop
 
+        input.close(); // close scanner utility
+        
     } // main
 
 } // class

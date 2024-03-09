@@ -1,3 +1,8 @@
+/*
+  Author: Lazaro Martinez
+  Date:   03/09/24
+*/
+
 html {
   font-size: 12px;
 }
@@ -65,7 +70,7 @@ article {
   padding: 3%;
 }
 
-article::first-letter {
+article p:first-letter {
   font-size: 3em;
   line-height: 0.9em;
   float: left;
@@ -81,7 +86,7 @@ aside {
   box-shadow: 2px 2px 2px rgb(52, 24, 15);
 }
 
-aside h3::first-letter {
+aside h3:first-letter {
   text-shadow: 2px -1px 0 orange;
 }
 
