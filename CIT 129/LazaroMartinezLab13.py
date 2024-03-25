@@ -2,7 +2,7 @@
 #CIT129-1004
 #Date: 12/01/23
 #Time Taken: 2-3 hours (the sorting and searching took me a while to figure out)
-#This program asks the user for the number of students, 
+#This program asks the user for the number of students,
 #then asks for the name and score of each student.
 #user input is stored in two lists that we can use
 #to find the average score, highest score. It sorts the list,

@@ -70,7 +70,7 @@ def getDealers():
     while flag == 0:
         flag = 1
         i = 0
-        while i <= (numDealers - 2):            
+        while i <= (numDealers - 2):
             if commission[i] > commission[i+1]:
                 #used temporary variables to store the previous values before we replaced them
                 temp1 = commission[i]
