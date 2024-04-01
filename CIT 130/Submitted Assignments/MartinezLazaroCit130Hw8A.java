@@ -5,7 +5,7 @@ by the CSN Academic Integrity Policy while
 completing this assignment.
 @file MartinezLazaroCit130Hw8A.java
 @version The date as 2024-03-31
-@note Time taken ~4 hours, spread out
+@note Time taken ~2 hours, spread out
 @program this program utilizes OOP to create two classes (one for testing)
 that can be used to gather, calculate and display financial information for
 three customers (objects) using default data, hard-coded data and user
@@ -64,14 +64,14 @@ public class MartinezLazaroCit130Hw8A {
         CD = 0.0;
         balance = 0.0;
         customerName = "John Smith";
-    }//no-arg constructor
+    }//no-arg constructor to set default values
 
     public void assignData(double checking, double savings, double CD, String customerName) {
         this.checking = checking;
         this.savings = savings;
         this.CD = CD;
         this.customerName = customerName;
-    }//assign method
+    }//assignData method for hard coded data
     
     public double getTotal() {
         balance = checking + savings + CD;
@@ -84,9 +84,9 @@ public class MartinezLazaroCit130Hw8A {
         System.out.printf("Savings Account: $%.2f\n", savings);
         System.out.printf("CD Account: $%.2f\n", CD);
         System.out.printf("Total Balance: $%.2f\n", balance);
-    }//display method
+    }//display formatted data method
 
-}//class
+}//main class
 
 
 class MartinezLazaroCit130TestHw8A {
@@ -117,5 +117,6 @@ class MartinezLazaroCit130TestHw8A {
         customer3.displayData();
 
         input.close();//close scanner
-    }
+        
+    }//main
 }//test class
