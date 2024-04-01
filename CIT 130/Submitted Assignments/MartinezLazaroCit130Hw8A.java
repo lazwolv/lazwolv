@@ -66,11 +66,11 @@ public class MartinezLazaroCit130Hw8A {
         customerName = "John Smith";
     }//no-arg constructor to set default values
 
-    public void assignData(double checking, double savings, double CD, String customerName) {
-        this.checking = checking;
-        this.savings = savings;
-        this.CD = CD;
-        this.customerName = customerName;
+    public void assignData(double assignChecking, double assignSavings, double assignCD, String assigncustomerName) {
+        checking = assignChecking;
+        savings = assignSavings;
+        CD = assignCD;
+        customerName = assigncustomerName;
     }//assignData method for hard coded data
     
     public double getTotal() {
@@ -84,6 +84,7 @@ public class MartinezLazaroCit130Hw8A {
         System.out.printf("Savings Account: $%.2f\n", savings);
         System.out.printf("CD Account: $%.2f\n", CD);
         System.out.printf("Total Balance: $%.2f\n", balance);
+        System.out.println();
     }//display formatted data method
 
 }//main class
