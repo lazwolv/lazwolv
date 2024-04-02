@@ -2,7 +2,7 @@
 - 👀 I’m interested in a future as a Software Engineer
 - 🌱 I’m currently learning HTML, CSS, Java and SQL
 - 💞️ I’m looking to meet other people who are learning like me
-- 📫 How to reach me @lazwolv on all socials
+- 📫 I can be reached @lazwolv on all socials
 - ⚡ Fun fact: I was born and raised in Cuba but naturalized as a US citizen
 
 <!---
