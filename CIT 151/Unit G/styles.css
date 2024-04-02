@@ -128,6 +128,13 @@ h3 {
 article p {
   padding-top: 1em;
 }
+article p.imagemap {
+  text-align: center;
+}
+article p.imagemap img {
+  border: 1px solid black;
+  max-width: none ;
+}
 article p.pullquote {
   font-size: 1.7em;
 }
