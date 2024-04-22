@@ -1,0 +1,301 @@
+﻿/*
+   Lakeland Reeds Bed and Breakfast style sheet
+   Filename: styles.css
+
+   Author:   Lazaro Martinez
+   Date:     04/15/2024
+   HTML5 and CSS3 Illustrated Unit I, Lessons
+ */
+
+/* reset styles */
+html {
+   font-size: 16px;
+}
+a, article, body, div, figcaption, figure, footer,
+header, h1, h2, h3, img, li, nav, p, section, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+   display: block;
+}
+ul {
+   list-style-type: none;
+}
+
+/* document-wide styles */
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   position: relative;
+}
+p {
+   line-height: 1.4em;
+   font-size: 1.3em;
+}
+a:link {
+   color: black;
+}
+a:visited {
+   color: #888;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: ivory;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+header {
+   background-color: white;
+   width: 80%;
+   float: left;
+}
+h1 {
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   color: #34180f;
+   font-size: 2.4em;
+}
+h1 img {
+   margin: 0 auto;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: #34180f;
+   width: 18%;
+   padding: 5% 1%;
+   float: right;
+   position: relative;
+}
+div.navigation-menu-button {
+   float: right;
+}
+nav.sitenavigation ul {
+   background-color: #B8944D;
+   border: 3px solid #34180f;
+   display: none;
+   position: absolute;
+   right: 5%;
+   top: 70%;
+   z-index: 2;
+}
+nav.sitenavigation li {
+   margin: 0.3em 0.5em;
+   font-size: 1.3em;
+   line-height: 1.4em;
+   text-align: left;
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: #34180f;
+}
+nav.sitenavigation a:visited {
+   color: #744f42;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: ivory;
+}
+
+/* main content */
+article {
+   margin: 0 auto;
+   background: #7eccec;
+   background: url("images/water.jpg");
+   clear: both;
+}
+article div {
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: ivory;
+}
+section {
+   border: 1px solid black;
+   padding: 2% 4% 5em;
+   margin: 2% 0;
+   overflow: auto;
+   position: relative;
+   background-color: white;
+   box-shadow: 0 10px 6px -6px #777;
+}
+section p {
+   clear: left;
+}
+section p:first-of-type {
+   display: none;
+}
+h2 {
+   padding: 0.4em 0.4em 0;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h3 {
+   margin: 0.5em 0;
+   font-size: 1.6em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   clear: both;
+}
+.top-link {
+   margin: 0 4% 4%;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+.top-link a {
+   padding: 3px 6px;
+   border: 2px solid #777;
+   display: inline-block;
+   background-color: #ebf8fa;
+}
+.top-link a:link {
+   text-decoration: none;
+}
+.top-link a:visited {
+   color: black;
+}
+.top-link a:hover, .top-link a:focus {
+   border-color: #34180f;
+   color: white;
+   background-color: #34180f;
+}
+
+/* main content figures */
+figure {
+   width: auto;
+   padding: 2%;
+   border: 1px solid #ccc;
+   margin-bottom: 1.6em;
+   background-color: white;
+}
+
+/* footer section */
+footer {
+   padding: 0.6em;
+   background-color: #34180f;
+   color: ivory;
+   text-align: center;
+}
+footer a:link {
+   color: white;
+}
+footer a:visited {
+   color: #ccc;
+}
+
+/* small screen/tablet styles */
+@media screen and (min-width: 460px), print {
+   article {
+      padding: 2%;
+   }
+   figure {
+      border: 1px solid #ccc;
+      padding: 2%;
+      box-shadow: 0 10px 6px -6px #777;
+      display: inline-block;
+   }
+   section {
+      text-align: center;
+   }
+   section h3, section p {
+      text-align: left;
+   }
+   section p:first-of-type {
+      display: block;
+   }
+}
+
+/* standard screen styles */
+@media screen and (min-width: 880px) {
+   header {
+      float: none;
+      width: auto;
+   }
+   div.navigation-menu-button {
+      display: none;
+   }
+   nav.sitenavigation {
+      width: 100%;
+      padding: 0;
+   }
+   nav.sitenavigation ul {
+      border: none;
+      width: 100%;
+      display: block;
+      position: static;
+      text-align: center;
+   }
+   nav.sitenavigation li {
+      display: inline-block;
+   }
+   h3 {
+      float: left;
+   }
+   figure {
+      float: right;
+      max-width: 50%;
+      margin: 2% 0 2% 2%;
+   }
+   section {
+      padding-bottom: 2%;
+   }
+   .top-link {
+      right: auto;
+      left: 0;
+   }
+}
+
+/* large screen styles */
+@media screen and (min-width: 1060px) {
+   figure {
+      margin: 2% 25% 2% 2%;
+   }
+   .top-link {
+      left: auto;
+      right: 0;
+   }
+}
+
+/* maximum width screen styles */
+@media screen and (min-width: 1400px) {
+   article div {
+      width: 1260px; /* 1400 * 90% */
+   }
+}
+
+/* print styles */
+@media print {
+   body, h1, article, footer {
+      color: rgb(0,0,0);
+      background: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+   section {
+      page-break-before: always;
+   }
+}
+@page {
+   margin: 0.75in;
+}
