@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Lakeland Reeds Bed &amp; Breakfast - Contact Us</title>
+   <!-- 
+         Lakeland Reeds Bed & Breakfast Reservations page
+         Filename: contact.html
+
+         Author:   Lazaro Martinez
+         Date:     04/22/2024
+         HTML5 and CSS3 Illustrated Unit J, Lessons
+      -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <script src="modernizr.custom.40753.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="shortcut icon" href="images/favicon.ico">
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+   <link rel="icon" sizes="192x192" href="images/android.png">
+</head>
+
+<body>
+   <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+   <header>
+      <h1><a href="index.html"><img src="images/lakeland.gif" width="659" height="165"
+               alt="Lakeland Reeds Bed and Breakfast"></a></h1>
+   </header>
+   <nav class="sitenavigation">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="aboutus.html">About Us</a></li>
+         <li><a href="reserve.html">Reservations</a></li>
+         <li><a href="events.html">Events</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+   </nav>
+   <article id="contentstart">
+      <div class="container">
+         <h2>Contact Us</h2>
+         <form action="results.html">
+            <fieldset class="contactinfo">
+               <legend>Contact Information</legend>
+               <label for="nameinput">
+                  Name
+                  <input type="text" name="name" id="nameinput" placeholder="First and last name">
+               </label>
+               <label for="emailinput">
+                  Email
+                  <input type="email" name="email" id="emailinput" placeholder="address@example.com">
+               </label>
+               <label for="phoneinput">
+                  Phone
+                  <input type="tel" name="phone" id="phoneinput">
+               </label>
+            </fieldset>
+            <fieldset class="reserveinfo">
+               <legend>Reservation Information</legend>
+               <fieldset class="schedule">
+                  <legend>Schedule</legend>
+                  <p>Check-in date</p>
+                  <div class="date-picker">
+                     <label for="checkin-month">Check-in Month</label>
+                     <select id="checkin-month" name="checkin-month">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                     </select>
+                     <label for="checkin-day">Check-in Day</label>
+                     <select id="checkin-day" name="checkin-day">
+                        <option value="01">1</optio>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                     </select>
+                     <label for="checkin-year">Check-in Year</label>
+                     <select id="checkin-year" name="checkin-year">
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                     </select>
+                  </div>
+                  <label for="stay-nights">
+                     Number of nights
+                     <input type="number" name="nights" id="stay-nights">
+                  </label>
+               </fieldset>
+               <fieldset class="roominfo">
+                  <legend>Room(s) to reserve</legend>
+                  <label for="sun">
+                     <input type="checkbox" id="sun" value="Sun Room" name="room">
+                     Sun Room
+                  </label>
+                  <label for="reed">
+                     <input type="checkbox" id="reed" value="Reed Room" name="room">
+                     Reed Room
+                  </label>
+                  <label for="tree">
+                     <input type="checkbox" id="tree" value="Tree Room" name="room">
+                     Tree Room
+                  </label>
+                  <label for="garden">
+                     <input type="checkbox" id="garden" value="Garden Room" name="room">
+                     Garden Room
+                  </label>
+               </fieldset>
+               <fieldset class="occasioninfo">
+                  <legend>What's the occasion for your visit?</legend>
+                  <label for="vacation">
+                     <input type="radio" name="occasion" id="vacation" value="Vacation" checked>
+                     Vacation
+                  </label>
+                  <label for="celebration">
+                     <input type="radio" name="occasion" id="celebration" value="Celebration">
+                     Celebration
+                  </label>
+                  <label for="event">
+                     <input type="radio" name="occasion" id="event" value="Special Event">
+                     Special Event
+                  </label>
+               </fieldset>
+            </fieldset>
+            <fieldset class="additionalinfo">
+               <legend>Additional Information</legend>
+               <label for="feedback">
+                  Feedback, special requests, or other information
+                  <textarea name="feedback" id="feedback" rows="4" cols="55">
+                  </textarea>
+               </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+               <input type="submit" id="submit" value="Submit">
+            </fieldset>
+         </form>
+      </div>
+   </article>
+   <footer>
+      <p>45 Marsh Grass Ln. &bull; Marble, MN 55764 &bull; (218) 555-5253</p>
+   </footer>
+</body>
+
+</html>
