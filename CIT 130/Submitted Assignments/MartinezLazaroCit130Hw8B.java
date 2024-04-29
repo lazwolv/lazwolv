@@ -1,5 +1,4 @@
 /*
-import java.util.Scanner;
 @author Lazaro Martinez
 I pledge my word of honor that I have abided
 by the CSN Academic Integrity Policy while
