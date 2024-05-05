@@ -3,7 +3,7 @@
 I pledge my word of honor that I have abided
 by the CSN Academic Integrity Policy while
 completing this assignment.
-@file MartinezLazaroCit130Hw8A.java
+@file MartinezLazaroCit130Hw11.java
 @version The date as 2024-05-04
 @note Time taken 1 hour
 @program this program creates 2 perpendicular lines, creates a circle at the end of each line
