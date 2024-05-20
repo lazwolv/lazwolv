@@ -1,6 +1,0 @@
-Apple		1.99
-Butter		2.99
-Soap		1.0
-Bananas		1.0
-Milk		2.99
-Dog_Food		5.99
