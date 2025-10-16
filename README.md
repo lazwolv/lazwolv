@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning R and C++
 - 💞️ I’m looking to meet other people who are learning like me
 - 📫 I can be reached @lazwolv on all socials
-- ⚡ Fun fact: I was born and raised in Cuba but naturalized as a US citizen
+- ⚡ Fun fact: I was born and raised in Cuba
 
 <!---
 lazwolv/lazwolv is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
